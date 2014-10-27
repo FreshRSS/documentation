@@ -9,7 +9,7 @@
     "breadcrumbs": true,
     "breadcrumb_separator": "Chevrons",
     "date_modified": true,
-    "float": true,
+    "float": false,
     "file_editor": false,  
     "timezone": "Europe/Paris",
     "languages": {
