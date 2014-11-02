@@ -18,11 +18,11 @@ Ce que j'entends par "Chemin CSS des articles sur le site d’origine" correspon
 
 Pour trouver ce chemin, il faut se rendre à l'adresse d'un des articles tronqués (par exemple http://www.rue89.com/2013/10/15/prof-maths-jai-atteint-lextase-dihn-pedagogie-inversee-246635). Il faut alors chercher le "bloc" HTML correspondant au contenu de l'article (dans le code source !)
 
-On trouve ici que le bloc qui englobe uniquement le contenu de l'article est `<div class="content clearfix">`. On ne va garder que la classe .content ici. Néanmoins, comme je le disais plus haut, il est préférable de commencer le chemin avec un id. Si on remonte au bloc parent, il s'agit du bloc `<div id="article">` et c'est parfait ! Le chemin sera donc ''#article .content''
+On trouve ici que le bloc qui englobe uniquement le contenu de l'article est ```<div class="content clearfix">```. On ne va garder que la classe .content ici. Néanmoins, comme je le disais plus haut, il est préférable de commencer le chemin avec un id. Si on remonte au bloc parent, il s'agit du bloc ```<div id="article">``` et c'est parfait ! Le chemin sera donc ```#article .content```
 
 #### Liste de correspondances site -> chemin css
 
-*  Rue89 : ''#article .content''
-*  PCINpact : ''#actu_content''
-*  Lesnumériques : ''article#body div.text.clearfix''
+*  Rue89 : ```#article .content```
+*  PCINpact : ```#actu_content```
+*  Lesnumériques : ```article#body div.text.clearfix```
 

@@ -10,7 +10,7 @@ GitHub est la plate-forme à privilégier pour vos demandes. En effet, cela nous
  2. Commencez par rechercher si une demande similaire n'a pas déjà été faite. Si oui, n'hésitez pas à ajouter votre voix à la demande.
  3. Si votre demande est nouvelle, [ouvrez un nouveau ticket de bug](https///github.com/FreshRSS/FreshRSS/issues/new)
  4. Rédigez enfin votre demande. Si vous maitrisez l'anglais, c'est la langue à privilégier car cela permet d'ouvrir la discussion à un plus grand nombre de personnes. Sinon, ce n'est pas grave, continuez en français :)
- 5. Merci de bien vouloir suivre [ces quelques conseils](#Conseils) pour faciliter la prise en compte de votre ticket.
+ 5. Merci de bien vouloir suivre les quelques conseils donnés plus bas pour faciliter la prise en compte de votre ticket.
 
 ## De façon informelle
 
