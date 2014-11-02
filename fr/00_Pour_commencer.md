@@ -3,8 +3,8 @@ FreshRSS est un agrégateur et lecteur de flux RSS. Il permet de regrouper l'act
 FreshRSS a été conçu comme un agrégateur puissant et propose des tas de fonctionnalités :
 
 - Agrégation des flux RSS et Atom.
-- Utilisez les favoris pour marquer les articles qui vous ont plus ou que vous souhaitez lire plus tard.
-- Le système de filtrage et de recherche permet de cibler exactement les articles que vous souhaitez lire.
+- Utilisez les favoris pour marquer les articles qui vous ont plu ou que vous souhaitez lire plus tard.
+- Le système de filtrage et de recherche permettent de cibler exactement les articles que vous souhaitez lire.
 - Les statistiques permettent de savoir en un coup d'œil quels sont les sites qui publient le plus, ou à l'inverse, le moins.
 - Importation / exportation des flux au format OPML.
 - Multi-thèmes pour changer l'habillage de FreshRSS.
