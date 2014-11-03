@@ -6,9 +6,9 @@ Si vous êtes convaincus qu'il faut vous faire entendre, voici la marche à suiv
 
 GitHub est la plate-forme à privilégier pour vos demandes. En effet, cela nous permet de pouvoir discuter à plusieurs sur un problème ou une suggestion et de faire émerger, souvent, des idées nouvelles. Ne négligeons pas cet aspect "social" !
 
- 1. [Rendez-vous sur le gestionnaire de tickets de bugs](https///github.com/FreshRSS/FreshRSS/issues)
+ 1. [Rendez-vous sur le gestionnaire de tickets de bugs](https://github.com/FreshRSS/FreshRSS/issues)
  2. Commencez par rechercher si une demande similaire n'a pas déjà été faite. Si oui, n'hésitez pas à ajouter votre voix à la demande.
- 3. Si votre demande est nouvelle, [ouvrez un nouveau ticket de bug](https///github.com/FreshRSS/FreshRSS/issues/new)
+ 3. Si votre demande est nouvelle, [ouvrez un nouveau ticket de bug](https://github.com/FreshRSS/FreshRSS/issues/new)
  4. Rédigez enfin votre demande. Si vous maitrisez l'anglais, c'est la langue à privilégier car cela permet d'ouvrir la discussion à un plus grand nombre de personnes. Sinon, ce n'est pas grave, continuez en français :)
  5. Merci de bien vouloir suivre les quelques conseils donnés plus bas pour faciliter la prise en compte de votre ticket.
 
@@ -17,7 +17,7 @@ GitHub est la plate-forme à privilégier pour vos demandes. En effet, cela nous
 Tout le monde n'aime pas ou n'utilise pas GitHub pour des raisons aussi diverses que légitimes. C'est pourquoi vous pouvez aussi nous contacter de façon plus informelle.
 
 * [Par mail](dev@marienfressinaud.fr)
-* [Sur Diaspora*](https///diaspora-fr.org/people/14269f55abbb6818) (identifiant : marienfr@diaspora-fr.org)
+* [Sur Diaspora*](https://diaspora-fr.org/people/14269f55abbb6818) (identifiant : marienfr@diaspora-fr.org)
 * En commentaire dans [les articles de mon site](http://marienfressinaud.fr/) (attention à ce que l'article parle quand même de FreshRSS :))
 * À des évènements / rencontres autour du Logiciel Libre
 * Autour d'une bière dans un bar
