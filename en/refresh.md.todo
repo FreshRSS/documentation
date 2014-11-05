@@ -1,0 +1,36 @@
+# Refresh articles
+
+To have a good experience with FreshRSS, it needs to grab all new articles available in the subscribed feeds. There is few methods to do that.
+## Automatic update
+
+This is the preferred method because once it is configured, you can forget it. It grabs all updates by itself. Keep in mind that this method is available if you have access to scheduled task on your FreshRSS instance server.
+
+The script to run is named *actualize_script.php* and is located in the *app* folder of your FreshRSS instance.
+The scheduled task syntax won't be explained here, but [this quick introduction to crontab](http://www.adminschoice.com/crontab-quick-reference/) might help you.
+
+Undermentioned is an example allowing the update every hour.
+
+	:::cron
+	0 * * * * php /chemin/vers/FreshRSS/app/actualize_script.php > /tmp/FreshRSS.log 2>&1
+
+## Manual update
+
+If you can't or you won't use the automatic method, you can do it manually. There is two methods allowing to refresh all feeds or a subset of feed.
+
+### Full update
+
+This update runs for all instance feeds. To start it, click on the update link in the navigation menu.\\
+{{ :en:users:refresh.1.png |Navigation menu}}
+
+When the update starts, a progress bar is displayed.\\ 
+{{:en:users:refresh.5.png?nolink|Progress bar}}
+
+### Partial update
+
+This update runs only for the selected feed. To start it, click on the update link in the feed menu.
+
+{{:en:users:refresh.2.png?nolink|Feed menu}}
+
+
+
+
