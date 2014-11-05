@@ -13,7 +13,8 @@
     "file_editor": false,  
     "timezone": "Europe/Paris",
     "languages": {
-            "fr": "Fran&ccedil;ais"
+            "en": "English",
+            "fr": "Fran&ccedil;ais",
     },
     "ignore": {
             "files": [],
