@@ -14,7 +14,7 @@
     "timezone": "Europe/Paris",
     "languages": {
             "en": "English",
-            "fr": "Fran&ccedil;ais",
+            "fr": "Fran&ccedil;ais"
     },
     "ignore": {
             "files": [],
