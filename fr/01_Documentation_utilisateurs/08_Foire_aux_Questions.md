@@ -16,3 +16,19 @@ Afin d'améliorer la sécurité, FreshRSS est découpé en deux parties : une pa
 Comme expliqué dans les [conseils de sécurité](/fr/Documentation_utilisateurs/Installation/Conseils_de_sécurité), il est recommandé de faire pointer un sous-domaine vers ce sous-répertoire afin que seule la partie publique ne soit accessible par un navigateur web. De cette manière http://demo.freshrss.org/ pointe vers le répertoire ```./p``` et le robots.txt se trouve bien à la racine du site : http://demo.freshrss.org/robots.txt.
 
 L'explication est la même pour les fichiers ```favicon.ico``` et ```.htaccess```.
+
+## Pourquoi j'ai des erreurs quand j'essaye d'enregistrer un flux ?
+
+Il peut y avoir différentes origines à ce problème.  
+Le flux peut avoir une syntaxe invalide, il peut ne pas être reconnu par la bibliothèque SimplePie, l'hébergement peut avoir des problèmes, FreshRSS peut être boggué.
+Il faut dans un premier temps déterminer la cause du problème.  
+Voici la liste des étapes à suivre pour la déterminer :
+
+1. __Vérifier la validité du flux__ grâce à l'[outil en ligne du W3C](http://validator.w3.org/feed/ "Validateur en ligne de flux RSS et Atom"). Si ça ne fonctionne pas, nous ne pouvons rien faire.
+1. __Vérifier la reconnaissance par SimplePie__ grâce à l'[outil en ligne de SimplePie](http://simplepie.org/demo/ "Démo officielle de SimplePie"). Si ça ne fonctionne pas, nous ne pouvons rien faire.
+1. __Vérifier l'intégration dans FreshRSS__ grâce à la [démo](http://demo.freshrss.org "Démo officielle de FreshRSS"). Si ça ne fonctionne pas, il faut [créer un ticket sur Github](https://github.com/FreshRSS/FreshRSS/issues/new "Créer un ticket pour FreshRSS") pour que l'on puisse regarder ce qui se passe. Si ça fonctionne, il y a probablement un problème avec l'hébergement.
+
+Voici une liste des flux qui ne fonctionnent pas :
+* http://foulab.org/fr/rss/Foulab_News : ne passe pas la validation W3C (novembre 2014)
+* http://eu.battle.net/hearthstone/fr/feed/news : ne passe pas la validation W3C (novembre 2014)
+* http://webseriesmag.blogs.liberation.fr/we/atom.xml : ne fonctionne pas chez l'utilisateur mais passe l'ensemble des validations ci-dessus (novembre 2014)
