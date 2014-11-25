@@ -12,7 +12,7 @@ Il est toutefois de votre responsabilité de vérifier que votre hébergement pe
 
 ### Note importante
 
-FreshRSS **PEUT** fonctionner sur la version de PHP 5.3.3. En effet, nous utilisons des fonctions spécifiques pour la connexion par formulaire et notamment la librairie ''password_compat''. Celle-ci est compatible avec PHP >= 5.3.7 ou certaines versions plus anciennes incluant un patch spécifique. Cela dépend de la distribution :
+FreshRSS **PEUT** fonctionner sur la version de PHP 5.3.3. En effet, nous utilisons des fonctions spécifiques pour la connexion par formulaire et notamment la bibliothèque ''password_compat''. Celle-ci est compatible avec PHP >= 5.3.7 ou certaines versions plus anciennes incluant un patch spécifique. Cela dépend de la distribution :
 
 *  CentOS et la Red Hat Enterprise Linux 6.5 sont supportés.
 *  En revanche, **Debian avec PHP 5.3.3 n'est pas supporté !**
