@@ -7,7 +7,7 @@ FreshRSS possède trois versions différentes (nous parlons de branches) qui sor
 Cette version sort lorsqu'on considère qu'on a répondu à nos objectifs en terme de nouvelles fonctionnalités. Deux versions peuvent ainsi sortir de façon très rapprochée si les développeurs travaillent bien. En pratique, comme nous nous fixons de nombreux objectifs et que nous travaillons sur notre temps libre, les versions sont souvent assez espacées (plusieurs mois). Son avantage est que le code est particulièrement stable et vous ne devriez pas faire face à de méchants bugs.
 
 
-## La version bêta
+## La version béta
 
 [Téléchargement](https///github.com/FreshRSS/FreshRSS/archive/beta.zip)
 
