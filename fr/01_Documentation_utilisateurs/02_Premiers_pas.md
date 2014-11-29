@@ -1,10 +1,10 @@
 Découvrir un nouveau logiciel n'est pas toujours facile. Si nous avons voulu FreshRSS le plus intuitif possible, vous aurez peut-être besoin d'un coup de main pour le maîtriser.
 
-Cette section se propose de vous aider dans la prise en main de l'outil. Il ne s'agit que de liens menant vers les autres pages du wiki mais ordonnés dans un ordre spécifique aux nouveaux arrivants.
+Cette section se propose de vous aider dans la prise en main de l'outil. Il ne s'agit que de liens menant vers les autres pages de la documentation mais ordonnées dans un ordre spécifique aux nouveaux arrivants.
 
 Après l'installation, la première chose à faire est d'ajouter un ou plusieurs sites à suivre. Pour cela plusieurs choix s'offrent à vous :
 
- 1.  [Ajouter un article manuellement](/fr/Documentation_utilisateurs/Abonnements/Ajouter_un_flux)
+ 1.  [Ajouter un flux manuellement](/fr/Documentation_utilisateurs/Abonnements/Ajouter_un_flux)
  2.  [Importer un fichier OPML ou JSON](/fr/Documentation_utilisateurs/Abonnements/Import_et_export)
  3.  [Utiliser le bookmark dédié](/fr/Documentation_utilisateurs/Abonnements/Utiliser_le_bookmark)
 
