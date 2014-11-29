@@ -38,6 +38,7 @@ Chaque fichier doit se terminer par une ligne vide.
 ### Le cas de la virgule, du point et du point-virgule
 
 Il n'y a pas d'espace avant ces caractères, il y en a un après.
+
 ### Le cas des opérateurs
 
 Chaque opérateur est entouré d'espaces.
@@ -96,10 +97,10 @@ function ma_fonction($param_1, $param_2,
 }
 ```
 
-
 ## Nommage
 
 L'ensemble des éléments du code (fonctions, classes, méthodes et variables) doivent être nommés de manière à décrire leur usage de façon concise.
+
 ### Fonctions et variables
 
 Les fonctions et les variables doivent suivre la convention "snake case".
@@ -130,7 +131,6 @@ Les classes doivent suivre la convention "upper camel case".
 ```php
 abstract class NomDeLaClasse {}
 ```
-
 
 ## Encodage
 
@@ -168,7 +168,6 @@ if ($a == 10 ||
     // faire quelque chose
 }
 ```
-
 
 ### Fin des fichiers
 
