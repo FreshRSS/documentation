@@ -8,7 +8,7 @@ L'image Docker contenant l'environnement de développement de FreshRSS est acces
 
 `$ docker pull marienfressinaud/freshrss`
 
-Vous pouvez lire [le fichier README du dépôt dédié](https///github.com/FreshRSS/docker-freshrss).
+Vous pouvez lire [le fichier README du dépôt dédié](https://github.com/FreshRSS/docker-freshrss).
 
 # Architecture du projet
 

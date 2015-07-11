@@ -18,9 +18,7 @@ GitHub est la plate-forme à privilégier pour vos demandes. En effet, cela nous
 
 Tout le monde n'aime pas ou n'utilise pas GitHub pour des raisons aussi diverses que légitimes. C'est pourquoi vous pouvez aussi nous contacter de façon plus informelle.
 
-* [Par mail](dev@marienfressinaud.fr)
-* [Sur Diaspora*](https://diaspora-fr.org/people/14269f55abbb6818) (identifiant : marienfr@diaspora-fr.org)
-* En commentaire dans [les articles de mon site](http://marienfressinaud.fr/) (attention à ce que l'article parle quand même de FreshRSS :))
+* Sur [les listes de diffusion](http://freshrss.org/announce-of-the-mailing-lists.html)
 * À des évènements / rencontres autour du Logiciel Libre
 * Autour d'une bière dans un bar
 * Etc.

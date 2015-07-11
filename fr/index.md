@@ -16,5 +16,5 @@ FreshRSS a été conçu comme un agrégateur puissant et propose des tas de fonc
 
 Cette documentation est partagée en deux parties :
 
-- La [documentation utilisateurs](/fr/Documentation_utilisateurs) pour découvrir plus en profondeur les fonctionnalités de FreshRSS.
-- La [documentation développeurs](/fr/Documentation_développeurs) pour savoir comment contribuer et mieux comprendre le code source de FreshRSS.
+- La [documentation utilisateurs](users/02_First_steps.md) pour découvrir plus en profondeur les fonctionnalités de FreshRSS.
+- La [documentation développeurs](developers/01_First_steps.md) pour savoir comment contribuer et mieux comprendre le code source de FreshRSS.

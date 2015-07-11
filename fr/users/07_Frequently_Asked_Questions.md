@@ -13,7 +13,7 @@ Bien entendu, le ```/i``` n'est pas là pour faire joli ! Il s'agit d'une questi
 
 Afin d'améliorer la sécurité, FreshRSS est découpé en deux parties : une partie publique (le répertoire ```./p```) et une partie privée (tout le reste !). Le ```robots.txt``` se trouve donc dans le sous-répertoire ```./p```.
 
-Comme expliqué dans les [conseils de sécurité](/fr/Documentation_utilisateurs/Installation/Conseils_de_sécurité), il est recommandé de faire pointer un nom de domaine vers ce sous-répertoire afin que seule la partie publique ne soit accessible par un navigateur web. De cette manière http://demo.freshrss.org/ pointe vers le répertoire ```./p``` et le ```robots.txt``` se trouve bien à la racine du site : http://demo.freshrss.org/robots.txt.
+Comme expliqué dans les [conseils de sécurité](01_Installation.md#conseils-de-securite), il est recommandé de faire pointer un nom de domaine vers ce sous-répertoire afin que seule la partie publique ne soit accessible par un navigateur web. De cette manière http://demo.freshrss.org/ pointe vers le répertoire ```./p``` et le ```robots.txt``` se trouve bien à la racine du site : http://demo.freshrss.org/robots.txt.
 
 L'explication est la même pour les fichiers ```favicon.ico``` et ```.htaccess```.
 

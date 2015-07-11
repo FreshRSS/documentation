@@ -5,18 +5,18 @@ repo_url: https://github.com/FreshRSS/FreshRSS
 docs_dir: .
 
 pages:
-- Accueil: index.md
-- Documentation utilisateurs:
-    - Installation: users/01_Installation.md
-    - Premiers pas: users/02_First_steps.md
-    - Vue principale: users/03_Main_view.md
-    - Abonnements: users/04_Subscriptions.md
-    - Configuration: users/05_Configuration.md
-    - Applications mobile: users/06_Mobile_access.md
-    - FAQ: users/07_Frequently_Asked_Questions.md
-- Documentation développeurs:
-    - Premiers pas: developers/01_First_steps.md
-    - Github: developers/02_Github.md
+- "Accueil": index.md
+- "Documentation utilisateurs":
+    - "Installation": users/01_Installation.md
+    - "Premiers pas": users/02_First_steps.md
+    - "Vue principale": users/03_Main_view.md
+    - "Abonnements": users/04_Subscriptions.md
+    - "Configuration": users/05_Configuration.md
+    - "Applications mobile": users/06_Mobile_access.md
+    - "FAQ": users/07_Frequently_Asked_Questions.md
+- "Documentation développeurs":
+    - "Premiers pas": developers/01_First_steps.md
+    - "Github": developers/02_Github.md
     - "[Backend] Schéma de base de données": developers/03_Backend/01_Database_schema.md
     - "[Backend] Minz": developers/03_Backend/02_Minz.md
     - "[Backend] Librairies externes": developers/03_Backend/03_External_libraries.md
@@ -24,4 +24,4 @@ pages:
     - "[Backend] Extensions": developers/03_Backend/05_Extensions.md
     - "[Frontend] Fichiers de vue": developers/04_Frontend/01_View_files.md
     - "[Frontend] Design": developers/04_Frontend/02_Design.md
-- Contribuer à FreshRSS: contributing.md
+- "Contribuer à FreshRSS": contributing.md
