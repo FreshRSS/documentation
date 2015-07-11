@@ -21,19 +21,19 @@ Aujourd'hui, la documentation est écrite principalement en français pour des r
 
 ## Comment ça fonctionne ?
 
-**Note** : pas à jour, nous utilisons [mkdocs](http://www.mkdocs.org).
+La documentation de FreshRSS est générée par [MkDocs](http://www.mkdocs.org/). Il s'agit d'un programme en Python qui génère des sites statiques de documentation.
 
-La documentation de FreshRSS utilise [Daux.io](http://daux.io/) pour être générée. L'écriture de cette documentation passe par 3 étapes :
+Ce dépôt ne contient que les fichiers en Markdown, les images et fichiers de configuration (un par langue).
 
-1. La documentation est écrite en Markdown [sur Github](https://github.com/FreshRSS/documentation).
-2. Le dépôt est récupéré régulièrement dans une installation de Daux.io sur [doc.freshrss.org](http://doc.freshrss.org).
-3. La documentation est générée en HTML automatiquement par le serveur.
+Pour générer le site de documentation à partir des fichiers Markdown, il est nécessaire de suivre un certain nombre d'étapes. Tout d'abord, assurez-vous que Python 2.7+ ainsi que la commande `pip` sont disponibles sur votre PC. Il est conseillé de travailler dans un environnement virtuel (`virtualenv`, `pew` ou similaire).
 
-Si vous souhaitez voir le résultat directement en local, vous devez [installer Daux.io](https://github.com/justinwalsh/daux.io) chez vous et cloner la documentation du dépôt [FreshRSS/documentation](https://github.com/FreshRSS/documentation) dans ```./daux.io/documentation```. Le fichier ```./daux.io/global.json``` doit être paramétré de la façon suivante :
-
-```json
-{
-    "docs_directory": "documentation",
-    "valid_markdown_extensions": ["md", "markdown"]
-}
+```bash
+$ pip install mkdocs  # Installe MkDocs
+$ cd ./fr             # Déplacement dans le répertoire de langue française
+$ mkdocs serve        # Donne un aperçu sur http://127.0.0.1:8000
+$ # Construit le site et synchronise les fichiers sur un serveur
+$ mkdocs build --clean
+$ scp -r ./site/* usr@host:/path/to/server/root/fr
 ```
+
+Le fichier `index.html` à la racine du dépôt est utilisé en tant que page d'accueil pour gérer l'internationalisation de la documentation car MkDocs ne le gère pas encore.
