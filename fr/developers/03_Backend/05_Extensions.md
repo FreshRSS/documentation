@@ -25,6 +25,8 @@ Note : il est tout à fait imaginable que les fonctionnalités d'une extension 
 
 ## Comprendre les mécaniques de base (Minz et MVC)
 
+**TODO** : bouger dans 02_Minz.md
+
 Cette fiche technique devrait renvoyer vers la documentation officielle de FreshRSS et de Minz (le framework PHP sur lequel repose FreshRSS). Malheureusement cette documentation n'existe pas encore. Voici donc en quelques mots les principaux éléments à connaître. Il n'est pas nécessaire de lire l'ensemble des chapitres de cette section si vous n'avez pas à utiliser une fonctionnalité dans votre extension (si vous n'avez pas besoin de traduire votre extension, pas besoin d'en savoir plus sur le module `Minz_Translate` par exemple).
 
 ### Architecture MVC
@@ -321,7 +323,8 @@ TODO :
 
 ### Système de « hooks »
 
-TODO
+TODO :
+
 - `entry_before_display` (`function($entry) -> Entry | null`)
 - `entry_before_insert` (`function($entry) -> Entry | null`)
 - `feed_before_insert` (`function($feed) -> Feed | null`)

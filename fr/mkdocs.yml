@@ -14,4 +14,14 @@ pages:
     - Configuration: users/05_Configuration.md
     - Applications mobile: users/06_Mobile_access.md
     - FAQ: users/07_Frequently_Asked_Questions.md
+- Documentation développeurs:
+    - Premiers pas: developers/01_First_steps.md
+    - Github: developers/02_Github.md
+    - "[Backend] Schéma de base de données": developers/03_Backend/01_Database_schema.md
+    - "[Backend] Minz": developers/03_Backend/02_Minz.md
+    - "[Backend] Librairies externes": developers/03_Backend/03_External_libraries.md
+    - "[Backend] Modifier le code": developers/03_Backend/04_Changing_source_code.md
+    - "[Backend] Extensions": developers/03_Backend/05_Extensions.md
+    - "[Frontend] Fichiers de vue": developers/04_Frontend/01_View_files.md
+    - "[Frontend] Design": developers/04_Frontend/02_Design.md
 - Contribuer à FreshRSS: contributing.md
