@@ -6,4 +6,4 @@ docs_dir: .
 
 pages:
 - Accueil: index.md
-- Contribuer à FreshRSS: 03_Contribuer_à_FreshRSS.md
+- Contribuer à FreshRSS: contributing.md
