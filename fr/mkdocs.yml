@@ -1,7 +1,7 @@
 site_name: Documentation FreshRSS
 theme: readthedocs
-site_url: http://doc.freshrss.org
-repo_url: https://github.com/FreshRSS/FreshRSS
+site_url: http://doc.freshrss.org/fr
+repo_url: https://github.com/FreshRSS/documentation
 
 pages:
 - "Accueil": index.md
