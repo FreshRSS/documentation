@@ -49,13 +49,13 @@ C'est le cas le plus simple, puisque votre instance est publique, vous n'avez ri
 
 Dans ces cas-là, si vous avez autorisé la lecture anonyme des articles, vous pouvez aussi permettre à n'importe qui de rafraîchir vos flux ("Autoriser le rafraîchissement anonyme des flux").
 
-{{:fr:users:anonymous_access.1.png|Configuration de l'accès anonymes}}
+![Configuration de l'accès anonymes](../img/users/anonymous_access.1.png)
 
 L'url précédente devient donc accessible à n'importe qui et vous pouvez utiliser la tâche cron de la partie précédente.
 
 Vous pouvez aussi configurer un jeton d'authentification pour accorder un droit spécial sur votre serveur.
 
-{{:fr:users:token.1.png|Configuration du token}}
+![Configuration du token](../img/users/token.1.png)
 
 La tâche cron à utiliser sera de la forme suivante :
 
@@ -80,17 +80,17 @@ Si vous ne pouvez pas ou ne voulez pas utiliser la méthode automatique, vous po
 
 Cette mise à jour se fait pour l'ensemble des flux de l'instance. Pour initier cette mise à jour, il suffit de cliquer sur le lien de mise à jour disponible dans le menu de navigation.
 
-{{ :fr:users:refresh.1.png |Menu de navigation}}
+![Menu de navigation](../img/users/refresh.1.png)
 
 Lorsque la mise à jour démarre, une barre de progression apparait et s'actualise au fur et à mesure de la récupération des articles.
 
-{{:fr:users:refresh.5.png?nolink|Barre de progression}}
+![Barre de progression](../img/users/refresh.5.png)
 
 ### Mise à jour partielle
 
 Cette mise à jour se fait pour le flux sélectionné uniquement. Pour initier cette mise à jour, il suffit de cliquer sur le lien de mise à jour disponible dans le menu du flux.
 
-{{:fr:users:refresh.2.png?nolink|Menu du flux}}
+![Menu du flux](../img/users/refresh.2.png)
 
 # Filtrer les articles
 
