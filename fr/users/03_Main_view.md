@@ -10,7 +10,9 @@
 
 **TODO**
 
-# Rafraîchir les fluxPour profiter pleinement de FreshRSS, il faut qu'il récupère les nouveaux articles disponibles des flux auxquels vous avez souscrit. Pour cela, il existe plusieurs méthodes.
+# Rafraîchir les flux
+
+Pour profiter pleinement de FreshRSS, il faut qu'il récupère les nouveaux articles disponibles des flux auxquels vous avez souscrit. Pour cela, il existe plusieurs méthodes.
 
 ## Mise à jour automatique
 

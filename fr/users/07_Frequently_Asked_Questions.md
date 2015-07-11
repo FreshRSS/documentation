@@ -29,6 +29,7 @@ Voici la liste des étapes à suivre pour la déterminer :
 1. __Vérifier l'intégration dans FreshRSS__ grâce à la [démo](http://demo.freshrss.org "Démo officielle de FreshRSS"). Si ça ne fonctionne pas, il faut [créer un ticket sur Github](https://github.com/FreshRSS/FreshRSS/issues/new "Créer un ticket pour FreshRSS") pour que l'on puisse regarder ce qui se passe. Si ça fonctionne, il y a probablement un problème avec l'hébergement.
 
 Voici une liste des flux qui ne fonctionnent pas :
+
 * http://foulab.org/fr/rss/Foulab_News : ne passe pas la validation W3C (novembre 2014)
 * http://eu.battle.net/hearthstone/fr/feed/news : ne passe pas la validation W3C (novembre 2014)
 * http://webseriesmag.blogs.liberation.fr/we/atom.xml : ne fonctionne pas chez l'utilisateur mais passe l'ensemble des validations ci-dessus (novembre 2014)

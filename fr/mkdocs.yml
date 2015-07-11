@@ -6,4 +6,12 @@ docs_dir: .
 
 pages:
 - Accueil: index.md
+- Documentation utilisateurs:
+    - Installation: users/01_Installation.md
+    - Premiers pas: users/02_First_steps.md
+    - Vue principale: users/03_Main_view.md
+    - Abonnements: users/04_Subscriptions.md
+    - Configuration: users/05_Configuration.md
+    - Applications mobile: users/06_Mobile_access.md
+    - FAQ: users/07_Frequently_Asked_Questions.md
 - Contribuer à FreshRSS: contributing.md
