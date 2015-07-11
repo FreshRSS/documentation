@@ -21,6 +21,7 @@ Pour sélectionner un thème, il suffit de faire défiler les thèmes jusqu'à l
 
 ##Largeur du contenu
 Il y en a qui préfère des lignes de texte courtes, d'autres qui préfèrent maximiser l'espace disponible sur l'écran. Pour satisfaire le maximum de personne, il est possible de choisir la largeur du contenu affiché. Il y a quatre réglages disponibles :
+
  * **Fine** qui affiche le contenu jusqu'à 550 pixels
  * **Moyenne** qui affiche le contenu jusqu'à 800 pixels
  * **Large** qui affiche le contenu jusqu'à 1000 pixels
