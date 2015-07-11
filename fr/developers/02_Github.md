@@ -1,3 +1,5 @@
+# Remonter un problème ou une suggestion
+
 Malgré le soin apporté à FreshRSS, il se peut que des bugs apparaissent encore. Le projet est jeune et le développement dynamique, aussi celui-ci pourra être corrigé rapidement. Il se peut aussi que vous ayez en tête une fonctionnalité qui n'existe pas encore. Que celle-ci vous paraisse idiote, farfelue, inutile ou trop spécifique, il ne faut surtout pas hésiter à nous la proposer ! Très souvent des "idées en l'air" ont trouvé une oreille attentive. Ce sont les regards externes qui font le plus évoluer le projet.
 
 Si vous êtes convaincus qu'il faut vous faire entendre, voici la marche à suivre.
@@ -68,3 +70,10 @@ Pensez à donner les informations suivantes si vous les connaissez :
 
 ----
 
+# Système de branches
+
+**TODO**
+
+# Proposer un patch
+
+**TODO**

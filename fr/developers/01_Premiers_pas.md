@@ -1,3 +1,19 @@
+# Configurer son environnement
+
+**TODO**
+
+## Docker
+
+L'image Docker contenant l'environnement de développement de FreshRSS est accessible via :
+
+`$ docker pull marienfressinaud/freshrss`
+
+Vous pouvez lire [le fichier README du dépôt dédié](https///github.com/FreshRSS/docker-freshrss).
+
+# Architecture du projet
+
+**TODO**
+
 # Style de codage
 
 Si vous désirez contribuer au code, il est important de respecter le style de codage suivant. Le code actuel ne le respecte pas entièrement mais il est de notre devoir à tous de le changer dès que l'occasion se présente.
