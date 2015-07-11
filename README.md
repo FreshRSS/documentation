@@ -35,3 +35,5 @@ $ # Build the website and push files onto your server
 $ mkdocs build --clean
 $ scp -r ./site/* usr@host:/path/to/server/root/fr
 ```
+
+The `index.html` file is used to handle the home page and to support internationalised documentation since MkDocs doesn't support it yet.
