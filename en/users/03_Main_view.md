@@ -49,13 +49,13 @@ This is the most straightforward since you have a public instance, there is noth
 
 In those cases, if you configure the application to allow anonymous reading, you can also allow anonymous user to update feeds ("Allow anonymous refresh of the articles").
 
-{{:fr:users:anonymous_access.1.png|Configuration de l'accès anonymes}}
+![Configuration de l'accès anonymes](../img/users/anonymous_access.1.png)
 
 The URL used in the previous section becomes accessible and therefore, you can use the same syntax for the scheduled task.
 
 You can also configure an authentication token to grant a special right on the server.
 
-{{:fr:users:token.1.png|Configuration du token}}
+![Configuration du token](../img/users/token.1.png)
 
 The scheduled task syntax to use will be the following:
 
@@ -80,17 +80,17 @@ If you can't or don't want to use the automatic methods, you can make it manuall
 
 This update occurs on all feeds. To trigger it, you need to click on the navigation menu update link.
 
-{{ :fr:users:refresh.1.png |Menu de navigation}}
+![Menu de navigation](../img/users/refresh.1.png)
 
 When the update starts, a progress bar appears and changes while feeds are processed.
 
-{{:fr:users:refresh.5.png?nolink|Barre de progression}}
+![Barre de progression](../img/users/refresh.5.png)
 
 ### Partial update
 
 This update occurs on the selected feed only. To trigger it, you need to click on the feed menu update link.
 
-{{:fr:users:refresh.2.png?nolink|Menu du flux}}
+![Menu du flux](../img/users/refresh.2.png)
 
 # Filtering articles
 
@@ -99,6 +99,7 @@ While the number of articles stored by FreshRSS increase, it is important to hav
 ##By category
 
 It is the easiest method. The only thing to do is clicking on the category title in the side panel. There is two special categories on top of that panel:
+
   * *Main feed* which displays only articles from feeds marked as available in that category
   * *Favorites* which displays only articles marked as favorites
 
@@ -114,7 +115,7 @@ There is several methods to filter articles by feed:
 
 Each article has two attributes which can be combined. The first attribute indicates if the article was read or not. The second attribute indicates if the article was marked as favorite or not.
 
-With version 0.7, attribute filters are available in the article display drop-down list. With this version, it is not possible to combine those filters. For instance, it is not possible to display only read and favorite articles.
+With version 0.7, attribute filters are available in the article display dropdown list. With this version, it is not possible to combine those filters. For instance, it is not possible to display only read and favorite articles.
 
 Starting with version 0.8, all attribute filters are visible as toggle icons. They can be combined. As any combination is possible, some have the same result. For instance, the result for all filters selected is the same as no filter selected.
 
