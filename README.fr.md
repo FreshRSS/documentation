@@ -33,7 +33,7 @@ $ cd ./fr             # Déplacement dans le répertoire de langue française
 $ mkdocs serve        # Donne un aperçu sur http://127.0.0.1:8000
 $ # Construit le site et synchronise les fichiers sur un serveur
 $ mkdocs build --clean
-$ scp -r ./site/* usr@host:/path/to/server/root/fr
+$ rsync -e ssh -P -rvzc --delete ./site/ user@server:/path/to/server/root/fr
 ```
 
 Le fichier `index.html` à la racine du dépôt est utilisé en tant que page d'accueil pour gérer l'internationalisation de la documentation car MkDocs ne le gère pas encore.
