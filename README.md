@@ -21,6 +21,8 @@ At the moment, the documentation is available in French for practical reasons. W
 
 ## How it works?
 
+**Note** : not up-to-date, we use [mkdocs](http://www.mkdocs.org).
+
 FreshRSS documentation is generated with [Daux.io](http://daux.io/). The writing process follows 3 simple steps:
 
 1. Writing the documentation in Markdown [on Github](https://github.com/FreshRSS/documentation).

@@ -21,6 +21,8 @@ Aujourd'hui, la documentation est écrite principalement en français pour des r
 
 ## Comment ça fonctionne ?
 
+**Note** : pas à jour, nous utilisons [mkdocs](http://www.mkdocs.org).
+
 La documentation de FreshRSS utilise [Daux.io](http://daux.io/) pour être générée. L'écriture de cette documentation passe par 3 étapes :
 
 1. La documentation est écrite en Markdown [sur Github](https://github.com/FreshRSS/documentation).
