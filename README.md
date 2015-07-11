@@ -33,5 +33,5 @@ $ cd ./fr             # Move to the French language directory
 $ mkdocs serve        # Have a preview at http://127.0.0.1:8000
 $ # Build the website and push files onto your server
 $ mkdocs build --clean
-$ scp -r ./site usr@host:/path/to/server/root
+$ scp -r ./site/* usr@host:/path/to/server/root/fr
 ```
