@@ -1,8 +1,6 @@
-[Version française](README.fr.md)
-
 # FreshRSS documentation
 
-This repository contains FreshRSS documentation source code. If you only need to browse the documentation, go to [doc.freshrss.org](http://doc.freshrss.org).
+The documentation has not been translated in English for yet. Here are some indication how to contribute.
 
 ## How-to contribute?
 
@@ -10,7 +8,7 @@ At the moment, FreshRSS documentation is far from being complete. We need all th
 
 1. [Fork the Github project](https://github.com/FreshRSS/documentation).
 2. Pull your fork on your computer or modify it directly on Github.
-3. The French documentation is located in the ```./fr``` folder.
+3. The English documentation is located in the ```./en``` folder.
 4. The documentation use Markdown syntax. This syntax is pretty straightforward. If you need some guidance, read the [Github guide to Markdown](https://guides.github.com/features/mastering-markdown/).
 5. Make a "pull request" on the official repository.
 6. You are done! Your changes will go through a team review then merged. Then, we will update [doc.freshrss.org](http://doc.freshrss.org).
