@@ -27,11 +27,11 @@ To generate the documentation website, you have to follow some few steps. First,
 
 ```bash
 $ pip install mkdocs  # Install MkDocs software
-$ cd ./fr             # Move to the French language directory
+$ cd ./en             # Move to the English language directory
 $ mkdocs serve        # Have a preview at http://127.0.0.1:8000
 $ # Build the website and push files onto your server
 $ mkdocs build --clean
-$ scp -r ./site/* usr@host:/path/to/server/root/fr
+$ rsync -e ssh -P -rvzc --delete ./site/ user@server:/path/to/server/root/en
 ```
 
 The `index.html` file is used to handle the home page and to support internationalised documentation since MkDocs doesn't support it yet.
