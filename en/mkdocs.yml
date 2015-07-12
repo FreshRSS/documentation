@@ -4,7 +4,7 @@ site_url: http://doc.freshrss.org/en
 repo_url: https://github.com/FreshRSS/FreshRSS
 
 pages:
-- "Accueil": index.md
+- "Home": index.md
 - "User Documentation":
     - "Installation": users/01_Installation.md
     - "First steps": users/02_First_steps.md

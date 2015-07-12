@@ -49,13 +49,13 @@ This is the most straightforward since you have a public instance, there is noth
 
 In those cases, if you configure the application to allow anonymous reading, you can also allow anonymous user to update feeds ("Allow anonymous refresh of the articles").
 
-![Configuration de l'accès anonymes](../img/users/anonymous_access.1.png)
+![Anonymous access configuration](../img/users/anonymous_access.1.png)
 
 The URL used in the previous section becomes accessible and therefore, you can use the same syntax for the scheduled task.
 
 You can also configure an authentication token to grant a special right on the server.
 
-![Configuration du token](../img/users/token.1.png)
+![Token configuration](../img/users/token.1.png)
 
 The scheduled task syntax to use will be the following:
 
@@ -80,17 +80,17 @@ If you can't or don't want to use the automatic methods, you can make it manuall
 
 This update occurs on all feeds. To trigger it, you need to click on the navigation menu update link.
 
-![Menu de navigation](../img/users/refresh.1.png)
+![Navigation menu](../img/users/refresh.1.png)
 
 When the update starts, a progress bar appears and changes while feeds are processed.
 
-![Barre de progression](../img/users/refresh.5.png)
+![Progress bar](../img/users/refresh.5.png)
 
 ### Partial update
 
 This update occurs on the selected feed only. To trigger it, you need to click on the feed menu update link.
 
-![Menu du flux](../img/users/refresh.2.png)
+![Feed menu](../img/users/refresh.2.png)
 
 # Filtering articles
 
@@ -106,10 +106,13 @@ It is the easiest method. The only thing to do is clicking on the category title
 ##By feed
 
 There is several methods to filter articles by feed:
+
   * by clicking the feed title in the side panel
   * by clicking the feed title in the article details
   * by filtering in the feed options from the side panel
   * by filtering in the feed configuration
+
+![Feed filter](../img/users/feed.filter.1.png)
 
 ##By status
 
@@ -117,7 +120,11 @@ Each article has two attributes which can be combined. The first attribute indic
 
 With version 0.7, attribute filters are available in the article display dropdown list. With this version, it is not possible to combine those filters. For instance, it is not possible to display only read and favorite articles.
 
+![Attribute filters in 0.7](../img/users/status.filter.0.7.png)
+
 Starting with version 0.8, all attribute filters are visible as toggle icons. They can be combined. As any combination is possible, some have the same result. For instance, the result for all filters selected is the same as no filter selected.
+
+![Attribute filters in 0.8](../img/users/status.filter.0.8.png)
 
 By default, this filter displays only unread articles
 
@@ -129,26 +136,14 @@ It is possible to filter articles by their content by inputting a string in the 
 
 Version 0.7.x introduced the support of keyword filters. They must be used in the search field used for the content filtering.
 
-  * by author:
-```
-author:<name>
-```
-  * by title:
-```
-intitle:<title>
-```
-  * by URL:
-```
-inurl:<url>
-```
+  * by author: `author:<name>`
+  * by title: `intitle:<title>`
+  * by URL: `inurl:<url>`
 
 Be aware that there is no space between the keyword and the value.
 Note also that keywords can not be combined.
 
-Version 0.8.x introduced a new keyword to search by dates. The format used is the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals) format.
-```
-date:<date>
-```
+Version 0.8.x introduced a new keyword to search by dates. The format used is the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals) format: `date:<date>`
 
 It is also possible to combine keywords to have a very sharp filter.
 
