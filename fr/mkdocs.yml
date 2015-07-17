@@ -1,5 +1,5 @@
 site_name: Documentation FreshRSS
-theme: readthedocs
+theme_dir: readthedocs
 site_url: http://doc.freshrss.org/fr
 repo_url: https://github.com/FreshRSS/documentation
 
