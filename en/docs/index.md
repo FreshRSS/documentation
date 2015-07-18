@@ -35,3 +35,12 @@ $ rsync -e ssh -P -rvzc --delete ./site/ user@server:/path/to/server/root/en
 ```
 
 The `index.html` file is used to handle the home page and to support internationalised documentation since MkDocs doesn't support it yet.
+
+We use a custom version of readthedocs theme which include the fonts directly (i.e. instead of using Google servers). Tu use it, you have to copy/paste the theme directory in the language folders.
+
+```bash
+$ cd ./en
+$ cp -R ../readthedocs ./
+$ # OR with a symbolic link
+$ ln -s ../readthedocs ./
+```

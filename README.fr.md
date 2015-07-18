@@ -37,3 +37,12 @@ $ rsync -e ssh -P -rvzc --delete ./site/ user@server:/path/to/server/root/fr
 ```
 
 Le fichier `index.html` à la racine du dépôt est utilisé en tant que page d'accueil pour gérer l'internationalisation de la documentation car MkDocs ne le gère pas encore.
+
+Nous incluons une version légèrement modifiée du thème readthedocs qui inclut directement les polices d'écriture au lieu d'utiliser les serveurs de Google. Pour utiliser ce thème, vous devez copier le répertoire du thème dans ceux des langues.
+
+```bash
+$ cd ./fr
+$ cp -R ../readthedocs ./
+$ # OU avec un lien symbolique
+$ ln -s ../readthedocs ./
+```
