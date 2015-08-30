@@ -8,7 +8,7 @@ Il est toutefois de votre responsabilité de vérifier que votre hébergement pe
  | --------         | -----------                                                                                                | ---------------------          | 
  | Serveur web      | **Apache 2**                                                                                               | Nginx                          | 
  | PHP              | **PHP 5.3.7+**                                                                                             | PHP 5.2+                       | 
- | Modules PHP      | Requis : libxml, cURL, PDO_MySQL, PCRE et ctype \\ Recommandé : JSON, Zlib, mbstring et iconv, ZipArchive |                                | 
+ | Modules PHP      | Requis : libxml, cURL, PDO_MySQL, PCRE, ctype et GMP \\ Recommandé : JSON, Zlib, mbstring et iconv, ZipArchive |                                | 
  | Base de données | **MySQL 5.0.3+**                                                                                           | SQLite 3.7.4+                  | 
  | Navigateur       | **Firefox**                                                                                                | Chrome, Opera, Safari or IE 9+ | 
 
