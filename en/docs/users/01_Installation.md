@@ -8,7 +8,7 @@ You need to verify that your server can run FreshRSS before installing it. If yo
 | ----------- | ---------------- | ----------------------------- |
 | Web server  | **Apache 2**     | Nginx                         |
 | PHP         | **PHP 5.3.7+**   | PHP 5.2+                      |
-| PHP modules | Required: libxml, cURL, PDO_MySQL, PCRE, ctype and GMP \\ Recommanded: JSON, Zlib, mbstring, iconv, ZipArchive | |
+| PHP modules | Required: libxml, cURL, PDO_MySQL, PCRE and ctype. \\ Required (32-bit only): GMP \\Recommanded: JSON, Zlib, mbstring, iconv, ZipArchive | |
 | Database    | **MySQL 5.0.3+** | SQLite 3.7.4+                 |
 | Browser     | **Firefox**      | Chrome, Opera, Safari or IE9+ |
 
@@ -74,7 +74,7 @@ server {
 
   # php files handling
   # this regex is mandatory because of the API
-  location ~ ^/(.*)\.php(.*)$ {
+  location ~ ^/.*\.php(/.*)?$ {
     fastcgi_pass unix:/var/run/php5-fpm.sock;
     fastcgi_split_path_info ^(.+\.php)(/.*)$;
     # By default, the variable PATH_INFO is not set under PHP-FPM
