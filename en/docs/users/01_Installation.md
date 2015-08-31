@@ -74,7 +74,7 @@ server {
 
   # php files handling
   # this regex is mandatory because of the API
-  location ~ ^/.*\.php(/.*)?$ {
+  location ~ ^.+?\.php(/.*)?$ {
     fastcgi_pass unix:/var/run/php5-fpm.sock;
     fastcgi_split_path_info ^(.+\.php)(/.*)$;
     # By default, the variable PATH_INFO is not set under PHP-FPM
