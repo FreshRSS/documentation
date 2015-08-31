@@ -51,7 +51,7 @@ Cette partie n'a pas encore été écrite. Néanmoins, comme il s'agit d'une bê
 
 Voici un fichier de configuration pour nginx. Il couvre la configuration pour http, https et php.
 
-_Vous pourrez trouver d'autres fichiers sur Google plus simples mais ne vous permettront peut-être pas d'utiliser l'API FreshRSS._
+_Vous pourrez trouver d'autres fichiers de configuration plus simples mais ces derniers ne seront peut-être pas compatibles avec l'API FreshRSS._
 
 ```
 server {

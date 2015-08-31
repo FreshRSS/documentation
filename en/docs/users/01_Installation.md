@@ -50,6 +50,8 @@ As its name suggests, it is the working release for developers. **This release i
 
 This is an example nginx configuration file. It covers http, https and php-fpm configuration.
 
+_You can find simpler config file but they may be incompatible with FreshRSS API._
+
 ```
 server {
   listen 80; # http on port 80
