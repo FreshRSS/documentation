@@ -23,4 +23,5 @@ pages:
     - "[Backend] Extensions": developers/03_Backend/05_Extensions.md
     - "[Frontend] View files": developers/04_Frontend/01_View_files.md
     - "[Frontend] Design": developers/04_Frontend/02_Design.md
+    - "Release a new version": developers/05_Release_new_version.md
 - "Contributing to FreshRSS": contributing.md
