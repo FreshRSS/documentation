@@ -25,11 +25,51 @@ Version x.y.z
 $ git push && git push --tags
 ```
 
+# Mise à jour de update.freshrss.org
+
+Il est important de mettre à jour update.freshrss.org puisqu'il s'agit du service par défaut gérant les mises à jour automatiques de FreshRSS.
+
+Le dépot gérant le code se trouve sur GitHub : [FreshRSS/update.freshrss.org](https://github.com/FreshRSS/update.freshrss.org/).
+
+## Écriture du script de mise à jour
+
+Les scripts se trouvent dans le répertoire `./scripts/` et doivent être de la forme `update_to_x.y.z.php` ou `update_to_x.y.z-beta.php`. On trouve aussi dans ce répertoire `update_to_dev.php` destiné aux mises à jour de la branche de dev (ce script ne doit pas inclure de code spécifique à une version particulière !) et `update_util.php` contenant une liste de fonctions utiles à tous les scripts.
+
+Afin d'écrire un nouveau script, il est préférable de copier / coller celui de la dernière version ou de partir de `update_to_dev.php`. La première chose à faire est de définir l'URL à partir de laquelle sera téléchargée le package FreshRSS (`PACKAGE_URL`). L'URL est de la forme `https://codeload.github.com/FreshRSS/FreshRSS/zip/x.y.z`.
+
+Il existe ensuite 5 fonctions à remplir :
+
+- `apply_update()` qui se charge de sauvegarder le répertoire contenant les données, de vérifier sa structure, de télécharger le package FreshRSS, de le déployer et de tout nettoyer. Cette fonction est pré-remplie mais des ajustements peuvent être faits si besoin est (ex. réorganisation de la structure de `./data`). Elle retourne `true` si aucun problème n'est survenu ou une chaîne de caractères indiquant un soucis ;
+- `need_info_update()` retourne `true` si l'utilisateur doit intervenir durant la mise à jour ou `false` sinon ;
+- `ask_info_update()` affiche un formulaire à l'utilisateur si `need_info_update()` a retourné `true` ;
+- `save_info_update()` est chargée de sauvegarder les informations renseignées par l'utilisateur (issues du formulaire de `ask_info_update()`) ;
+- `do_post_update()` est exécutée à la fin de la mise à jour et prend en compte le code de la nouvelle version (ex. si la nouvelle version modifie l'objet `Minz_Configuration`, vous bénéficierez de ces améliorations).
+
+## Mise à jour du fichier de versions
+
+Lorsque le script a été écrit et versionné, il est nécessaire de mettre à jour le fichier `./versions.php` qui contient une table de correspondances indiquant quelles versions sont mises à jour vers quelles autres versions.
+
+Voici comment fonctionne cette table :
+
+- à gauche se trouve la version N, à droite la version N+1 ;
+- les versions `x.y.z-dev` sont **toutes** mises à jour vers `dev` ;
+- les versions stables sont mises à jour vers des versions stables (les betas vers les betas) ;
+- il est possible de sauter plusieurs versions d'un coup à condition que les scripts de mise à jour le prennent en charge ;
+- lorsqu'un saut de version majeure est fait, il est préférable de se contenter de la version `x.(y+2).0`. Ainsi les versions `0.9` sont toutes mises à jour vers la version `1.1.0` et les versions `1.1` sont mises à jour vers la `1.1.3-beta` en attendant la sortie de la version `1.3.0-beta` ;
+- il est conseillé d'indiquer la correspondance de la version courante vers sa potentielle future version en précisant que cette version n'existe pas encore. Tant que le script correspondant n'existera pas, rien ne se passera.
+
+Il est **très fortement** indiqué de garder ce fichier rangé selon les numéros de versions en séparant les versions stables, betas et de dev.
+
+## Déploiement
+
+Avant de mettre à jour update.freshrss.org, il est préférable de tester avec dev.update.freshrss.org qui correspond à la pré-production. Mettez donc à jour dev.update.freshrss.org et changez l'URL `FRESHRSS_UPDATE_WEBSITE` de votre instance FreshRSS. Lancez la mise à jour et vérifiez que celle-ci se déroule correctement.
+
+Lorsque vous serez satisfait, mettez à jour update.freshrss.org avec le nouveau script et en testant de nouveau puis passez à la suite.
+
 # Mise à jour des services FreshRSS
 
-Trois services sont à mettre à jour immédiatement après une sortie :
+Deux services sont à mettre à jour immédiatement après la mise à jour de update.freshrss.org :
 
-- update.freshrss.org (en mettant à jour [FreshRSS/update.freshrss.org](https://github.com/FreshRSS/update.freshrss.org)). Pour tester les scripts de migration, il est possible d'utiliser dev.update.freshrss.org ;
 - rss.freshrss.org ;
 - demo.freshrss.org (identifiants publics : `demo` / `demodemo`).
 
@@ -52,3 +92,5 @@ $ vim CHANGELOG.md
 # Préparer la section pour la prochaine version
 $ git add CHANGELOG.md && git commit && git push
 ```
+
+Pensez aussi à mettre à jour update.freshrss.org pour qu'il prenne en compte la version de développement actuelle.
