@@ -49,7 +49,34 @@ Il existe ensuite 5 fonctions à remplir :
 
 Lorsque le script a été écrit et versionné, il est nécessaire de mettre à jour le fichier `./versions.php` qui contient une table de correspondances indiquant quelles versions sont mises à jour vers quelles autres versions.
 
-Voici comment fonctionne cette table :
+Voici un exemple de fichier `versions.php` :
+
+```php
+<?php
+
+return array(
+	// STABLE
+	'0.8.0' => '1.0.0',
+	'0.8.1' => '1.0.0',
+	'1.0.0' => '1.0.1',  // doesn't exist (yet)
+	//BETA
+	'0.9.0' => '1.1.0',
+	'0.9.1' => '1.1.0',
+	'0.9.2' => '1.1.0',
+	'0.9.3' => '1.1.0',
+	'0.9.4' => '1.1.0',
+	'1.1.0' => '1.1.3-beta',
+	'1.1.1-beta' => '1.1.3-beta',
+	'1.1.2-beta' => '1.1.3-beta',
+	'1.1.3-beta' => '1.1.4-beta',  // doesn't exist (yet)
+	// DEV
+	'1.1.2-dev' => 'dev',
+	'1.1.3-dev' => 'dev',
+	'1.1.4-dev' => 'dev',
+);
+```
+
+Et voici comment fonctionne cette table :
 
 - à gauche se trouve la version N, à droite la version N+1 ;
 - les versions `x.y.z-dev` sont **toutes** mises à jour vers `dev` ;
