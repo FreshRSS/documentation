@@ -8,6 +8,16 @@ Ce dépôt contient le code source de la documentation de FreshRSS. Si vous souh
 
 La documentation de FreshRSS est aujourd'hui encore trop incomplète. Nous avons besoin d'aide pour la compléter. Si vous souhaitez aider, les points suivants donnent quelques indications sur comment procéder. Si vous souhaitez savoir comment tout ça fonctionne, veuillez vous référer à la partie « Comment ça fonctionne ? ».
 
+La manière facile :
+
+1. rendez-vous sur le fichier que vous souhaitez éditer (par exemple, la page expliquant [comment contribuer à FreshRSS](https://github.com/FreshRSS/documentation/blob/master/fr/docs/contributing.md)) et éditez la page ;
+![](fr/docs/img/doc.edit.png)
+2. faites vos modifications ;
+3. validez vos modifications.
+4. C'est tout ! Vos améliorations seront probablement discutées puis acceptées. Ensuite, [doc.freshrss.org](http://doc.freshrss.org) sera mis à jour.
+
+La manière plus compliquée :
+
 1. Faites [un fork du projet sur Github](https://github.com/FreshRSS/documentation).
 2. Récupérez votre dépôt sur votre ordinateur ou faites les modifications directement sur Github.
 3. Le répertoire  ```./fr``` contient la documentation en français.
