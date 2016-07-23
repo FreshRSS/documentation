@@ -13,9 +13,9 @@ Il faut aussi **vous assurer que le fichier CHANGELOG est à jour** dans la bran
 # Processus Git
 
 ```bash
-$ git checkout master # ou git checkout beta
+$ git checkout master
 $ git pull
-$ git merge --no-ff dev
+$ git merge --ff dev
 $ vim constants.php
 # Mettre à jour le numéro de version x.y.z de FRESHRSS_VERSION
 $ git commit -a
@@ -33,7 +33,7 @@ Le dépot gérant le code se trouve sur GitHub : [FreshRSS/update.freshrss.org](
 
 ## Écriture du script de mise à jour
 
-Les scripts se trouvent dans le répertoire `./scripts/` et doivent être de la forme `update_to_x.y.z.php` ou `update_to_x.y.z-beta.php`. On trouve aussi dans ce répertoire `update_to_dev.php` destiné aux mises à jour de la branche de dev (ce script ne doit pas inclure de code spécifique à une version particulière !) et `update_util.php` contenant une liste de fonctions utiles à tous les scripts.
+Les scripts se trouvent dans le répertoire `./scripts/` et doivent être de la forme `update_to_x.y.z.php`. On trouve aussi dans ce répertoire `update_to_dev.php` destiné aux mises à jour de la branche de dev (ce script ne doit pas inclure de code spécifique à une version particulière !) et `update_util.php` contenant une liste de fonctions utiles à tous les scripts.
 
 Afin d'écrire un nouveau script, il est préférable de copier / coller celui de la dernière version ou de partir de `update_to_dev.php`. La première chose à faire est de définir l'URL à partir de laquelle sera téléchargée le package FreshRSS (`PACKAGE_URL`). L'URL est de la forme `https://codeload.github.com/FreshRSS/FreshRSS/zip/x.y.z`.
 
@@ -59,16 +59,6 @@ return array(
 	'0.8.0' => '1.0.0',
 	'0.8.1' => '1.0.0',
 	'1.0.0' => '1.0.1',  // doesn't exist (yet)
-	//BETA
-	'0.9.0' => '1.1.0',
-	'0.9.1' => '1.1.0',
-	'0.9.2' => '1.1.0',
-	'0.9.3' => '1.1.0',
-	'0.9.4' => '1.1.0',
-	'1.1.0' => '1.1.3-beta',
-	'1.1.1-beta' => '1.1.3-beta',
-	'1.1.2-beta' => '1.1.3-beta',
-	'1.1.3-beta' => '1.1.4-beta',  // doesn't exist (yet)
 	// DEV
 	'1.1.2-dev' => 'dev',
 	'1.1.3-dev' => 'dev',
@@ -80,12 +70,11 @@ Et voici comment fonctionne cette table :
 
 - à gauche se trouve la version N, à droite la version N+1 ;
 - les versions `x.y.z-dev` sont **toutes** mises à jour vers `dev` ;
-- les versions stables sont mises à jour vers des versions stables (les betas vers les betas) ;
+- les versions stables sont mises à jour vers des versions stables ;
 - il est possible de sauter plusieurs versions d'un coup à condition que les scripts de mise à jour le prennent en charge ;
-- lorsqu'un saut de version majeure est fait, il est préférable de se contenter de la version `x.(y+2).0`. Ainsi les versions `0.9` sont toutes mises à jour vers la version `1.1.0` et les versions `1.1` sont mises à jour vers la `1.1.3-beta` en attendant la sortie de la version `1.3.0-beta` ;
 - il est conseillé d'indiquer la correspondance de la version courante vers sa potentielle future version en précisant que cette version n'existe pas encore. Tant que le script correspondant n'existera pas, rien ne se passera.
 
-Il est **très fortement** indiqué de garder ce fichier rangé selon les numéros de versions en séparant les versions stables, betas et de dev.
+Il est **très fortement** indiqué de garder ce fichier rangé selon les numéros de versions en séparant les versions stables et de dev.
 
 ## Déploiement
 

@@ -30,12 +30,6 @@ FreshRSS has three different releases or branches. Each branch has its own relea
 
 This release is done when we consider that our goal concerning the new features and the stability is reached. It could happen that we make two releases in a really short time if we have a really good coding pace. In reality, we are all working on our spare time, so we release every few months. But this version is really stable, tested thoroughly and you should not face any major bugs.
 
-## Beta release
-
-[Download](https://github.com/FreshRSS/FreshRSS/archive/beta.zip)
-
-This release is done one a regular basis. Every month, we release new features and bug fixes so you can report what can or should be improved. The code is not as thoroughly tested so you can experience some major bugs but we do our best to deliver a day-to-day usable application. In that release, you can use the latest features fairly quickly.
-
 ## Development release
 
 [Download](https://github.com/FreshRSS/FreshRSS/archive/dev.zip)
