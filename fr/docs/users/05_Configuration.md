@@ -64,12 +64,6 @@ Il est possible de régler la durée d'affichage de cette notification. Par déf
 
 **Brouillon**
 
-### Authentification avec Persona
-
- 1.  Persona, système authentification par Mozilla : [https://login.persona.org/](https///login.persona.org/)
- 2.  Il suffit de renseigner une adresse e-mail et de l'inscrire sur Persona
- 3.  Possibilité de laisser les flux visibles aux visiteurs
-
 ### Authentification HTTP
 
  1.  Ne laisse rien de visible
