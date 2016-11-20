@@ -7,6 +7,7 @@ This section guides you to the pages you need as a new comer.
 1. [Add a feed manually](04_Subscriptions.md#adding-a-feed)
 2. [Import an OPML or JSON file](04_Subscriptions.md#import-and-export)
 3. [Use the bookmarklet](04_Subscriptions.md#use-bookmarklet)
+4. [Firefox integration](04_Subscriptions.md#firefox-subscription-service)
 
 Once you have added your feeds to FreshRSS, it is time to read them. You have access to three reading modes:
 
