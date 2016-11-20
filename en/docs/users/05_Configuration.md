@@ -67,19 +67,12 @@ The duration of this notification can be set. By default, the value is 0.
 
 ## Authentication methods
 
-**Draft copy**
+### HTTP Authentication (Apache)
 
-### Authentication with Persona
-
- 1. Persona, Mozilla authentication system: [https://login.persona.org/](https///login.persona.org/)
- 2. Simply enter an e-mail address of your Persona
- 3. It is possible to leave articles visible to visitors
-
-### HTTP Authentication
-
- 1. Leaves nothing visible
- 2. For Apache, based on a .htaccess file
-    - Example of .htaccess for a user "marie" to place in the directory of FreshRSS or in a parent directory:
+ 1. User control is based on the .htaccess file
+ 2. It is best practice to place the .htaccess file in ./i/ subdirecotry so API and other third party services can work.
+ 3. If you want to limit all access to registered users only, place the file in the directory of FreshRSS or in a parent directory. Note that PubsubHubbub and API will not work!
+ 4. Example .htaccess file for a user "marie":
 
 ```
 AuthUserFile /home/marie/repertoire/.htpasswd
