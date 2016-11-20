@@ -12,7 +12,7 @@ You need to verify that your server can run FreshRSS before installing it. If yo
 | Database    | **MySQL 5.0.3+** | SQLite 3.7.4+                 |
 | Browser     | **Firefox**      | Chrome, Opera, Safari or IE9+ |
 
-### Important notice
+## Important notice
 
 FreshRSS **CAN** work with PHP 5.3.3. To do so, we are using specific functions available in the ''password_compat'' library for the form authentication. This library is compatible with PHP >= 5.3.7 but some older version include the patch.
 It all depends on the distribution:
@@ -38,7 +38,37 @@ As its name suggests, it is the working release for developers. **This release i
 
 # Apache installation
 
-**TODO**
+This is an example Apache virtual hosts configuration file. It covers http and https configuration.
+
+```
+<VirtualHost *:80>
+    ServerName example.com
+    DocumentRoot /path/to/FreshRSS
+
+    ErrorLog ${APACHE_LOG_DIR}/freshrss_error.log
+    CustomLog ${APACHE_LOG_DIR}/freshrss_access.log combined
+
+    RewriteEngine on
+    RewriteCond %{SERVER_NAME} = example.com
+    RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,QSA,R=permanent]
+</VirtualHost>
+
+<IfModule mod_ssl.c>
+<VirtualHost *:443>
+    ServerName example.com
+    DocumentRoot /path/to/FreshRSS
+
+    ErrorLog ${APACHE_LOG_DIR}/freshrss_error.log
+    CustomLog ${APACHE_LOG_DIR}/freshrss_access.log combined
+
+    SSLCertificateFile /path/to/server.crt
+    SSLCertificateKeyFile /path/to/server.key
+
+    # Optional letsencrypt config (uncomment) line below
+    #Include /etc/letsencrypt/options-ssl-apache.conf
+</VirtualHost>
+</IfModule>
+```
 
 # Nginx installation
 
@@ -51,7 +81,7 @@ server {
   listen 80; # http on port 80
   listen 443 ssl; # https on port 443
 
-  # https configuration 
+  # https configuration
   ssl on;
   ssl_certificate      /etc/nginx/server.crt;
   ssl_certificate_key  /etc/nginx/server.key;
@@ -79,14 +109,14 @@ server {
     include fastcgi_params;
     fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
   }
-  
+
   location / {
     try_files $uri $uri/ index.php;
   }
 }
 ```
 
-
+A step-by-step tutorial is available [in french](http://www.pihomeserver.fr/2013/05/08/raspberry-pi-home-server-installer-un-agregateur-de-flux-rss-pour-remplacer-google-reader/).
 
 # Security
 
