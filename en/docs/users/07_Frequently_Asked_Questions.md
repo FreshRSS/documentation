@@ -1,3 +1,5 @@
+We may not have answered all of your questions in the previous sections. The FAQ contains some questions that have not been answered elsewhere.
+
 ## What is /i at the end of the application URL?
 
 Of course, ```/i``` has a purpose! We used it for performance and usability:
