@@ -225,7 +225,7 @@ Here we are! We've talked about the most useful features of Minz and how to run 
 
 An extension allows you to add functionality easily to FreshRSS without having to touch the core of the project directly.
 
-### Les fichiers et répertoires de base
+### Basic files and folders
 
 The first thing to note is that **all** extensions **must** be located in the `extensions` directory, at the base of the FreshRSS tree. 
 An extension is a directory containing a set of mandatory (and optional) files and subdirectories. 
@@ -238,7 +238,7 @@ The main directory of an extension must contain at least two **mandatory** files
 
 Please note that there is a not a required link between the directory name of the extension and the name of the class inside `extension.php`, 
 but you should follow our best practice:  
-If you want to write a `HelloWorld` extension, the directory name should be "xExtension-HelloWorld" and the base class name "HelloExtension".
+If you want to write a `HelloWorld` extension, the directory name should be `xExtension-HelloWorld` and the base class name `HelloWorldExtension`.
 
 In the file `freshrss/extensions/xExtension-HelloWorld/extension.php` you need the structure:
 ```html
@@ -253,14 +253,14 @@ There is an example HelloWorld extension that you can download from [our GitHub 
 You may also need additional files or subdirectories depending on your needs:
 
 - `configure.phtml` is the file containing the form to parameterize your extension
-- A `static /` directory containing CSS and JavaScript files that you will need for your extension (note that if you need to write a lot of CSS it may be more interesting to write a complete theme)
+- A `static/` directory containing CSS and JavaScript files that you will need for your extension (note that if you need to write a lot of CSS it may be more interesting to write a complete theme)
 - A `controllers` directory containing additional controllers
 - An `i18n` directory containing additional translations
 - `layout` and` views` directories to define new views or to overwrite the current views
 
 In addition, it is good to have a `LICENSE` file indicating the license under which your extension is distributed and a` README` file giving a detailed description of it.
 
-### Write file metadata.json
+### The metadata.json file
 
 The `metadata.json` file defines your extension through a number of important elements. It must contain a valid JSON array containing the following entries:
 
@@ -309,7 +309,7 @@ In addition, you will have a number of methods directly inherited from `Minz_Ext
 You can register at the FreshRSS event system in an extensions `init()` method, to manipulate data when some of the core functions are executed.
 
 ```html
-class MyExtension extends Minz_Extension
+class HelloWorldExtension extends Minz_Extension
 {
     public function init() {
         $this->registerHook('entry_before_display', array($this, 'renderEntry'));
@@ -322,13 +322,10 @@ class MyExtension extends Minz_Extension
 ```
 The following events are available:
 
-- `entry_before_display` (`function($entry) -> Entry | null`)
-\- will be executed every time an entry is rendered. The entry itself (instance of FreshRSS_Entry) will be passed as parameter. 
-- `entry_before_insert` (`function($entry) -> Entry | null`)
-\- will be executed when a feed is refreshed and new entries will be imported into the database. The new entry (instance of FreshRSS_Entry) will be passed as parameter. 
-- `feed_before_insert` (`function($feed) -> Feed | null`)
-\- will be executed when a new feed is imported into the database. The new feed (instance of FreshRSS_Feed) will be passed as parameter. 
-- `post_update` (`function(none) -> none`)
+- `entry_before_display` (`function($entry) -> Entry | null`) : will be executed every time an entry is rendered. The entry itself (instance of FreshRSS_Entry) will be passed as parameter. 
+- `entry_before_insert` (`function($entry) -> Entry | null`) : will be executed when a feed is refreshed and new entries will be imported into the database. The new entry (instance of FreshRSS_Entry) will be passed as parameter. 
+- `feed_before_insert` (`function($feed) -> Feed | null`) : will be executed when a new feed is imported into the database. The new feed (instance of FreshRSS_Feed) will be passed as parameter. 
+- `post_update` (`function(none) -> none`) : **TODO** add documentation
 
 ### Writing your own configure.phtml
 
