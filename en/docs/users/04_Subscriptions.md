@@ -28,6 +28,6 @@ You can manually add your FreshRSS app to the list of Firefox subscription servi
   | -------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------- |
   | browser.contentHandlers.types.%NUMBER%.title | **FreshRSS**                                               | Use any name you would like (ie. "My feeds")              |
   | browser.contentHandlers.types.%NUMBER%.type  | **application/vnd.mozilla.maybe.feed**                     | Do not change this value!                                 |
-  | browser.contentHandlers.types.%NUMBER%.uri   | **http://EXAMPLE.COM/FreshRss/i?c=feed&a=add&url_rss=%s+** | Replace base url with yours and switch to https (if used) |
+  | browser.contentHandlers.types.%NUMBER%.uri   | **http://EXAMPLE.COM/FreshRss/i?c=feed&a=add&url_rss=%s** | Replace base url with yours and switch to https (if used) |
 
   4. Restart Firefox and you can subscribe to sites with the Firefox built-in "Subscribe" button. Just select the name you set under the first Preference name from the dropdown (you can also make it default with the checbox) and you will be redirected to FreshRSS subscription settings (you must be logged in).
