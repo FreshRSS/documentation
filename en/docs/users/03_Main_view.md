@@ -22,7 +22,7 @@ This is the recommended method since you can forget about it once it is configur
 
 This method is available only if you have access to the installation server scheduled tasks.
 
-The script is named *actualize_script.php* and is located in the *app* folder. The scheduled task syntax won't be explained here. However, here is [a quick introduction to crontab](http://www.adminschoice.com/crontab-quick-reference/) that might help you.
+The script is named *actualize_script.php* and is located in the *app* folder. The scheduled task syntax will not be explained here. However, here is [a quick introduction to crontab](http://www.adminschoice.com/crontab-quick-reference/) that might help you.
 
 Here is an example to trigger article update every hour.
 
@@ -33,13 +33,13 @@ Here is an example to trigger article update every hour.
 
 ### Online cron
 
-If you don't have access to the installation server scheduled task, you can still automate the update process.
+If you do not have access to the installation server scheduled task, you can still automate the update process.
 
-To do so, you need to create a scheduled task which need to call a specific URL: https://your.server.net/FreshRSS/p/i/?c=feed&a=actualize (it could be different depending on your installation). Depending on your application authentication method, you need to adapt the scheduled task.
+To do so, you need to create a scheduled task, which need to call a specific URL: https://your.server.net/FreshRSS/p/i/?c=feed&a=actualize (it could be different depending on your installation). Depending on your application authentication method, you need to adapt the scheduled task.
 
 #### No authentication
 
-This is the most straightforward since you have a public instance, there is nothing special to configure:
+This is the most straightforward since you have a public instance; there is nothing special to configure:
 
 ```cron
 0 * * * * curl 'https://your.server.net/FreshRSS/p/i/?c=feed&a=actualize'
@@ -47,7 +47,7 @@ This is the most straightforward since you have a public instance, there is noth
 
 ### Form or Persona authentication
 
-In those cases, if you configure the application to allow anonymous reading, you can also allow anonymous user to update feeds ("Allow anonymous refresh of the articles").
+In those cases, if you configure the application to allow anonymous reading, you can also allow anonymous user to update feeds (“Allow anonymous refresh of the articles”).
 
 ![Anonymous access configuration](../img/users/anonymous_access.1.png)
 
@@ -74,7 +74,7 @@ In that case, the syntax in the two previous section are unusable. It means that
 
 ## Manual update
 
-If you can't or don't want to use the automatic methods, you can make it manually. There is two ways, the partial or the complete update.
+If you cannot or do not want to use the automatic methods, you can make it manually. There is two ways, the partial or the complete update.
 
 ### Complete update
 
@@ -101,7 +101,7 @@ While the number of articles stored by FreshRSS increase, it is important to hav
 It is the easiest method. The only thing to do is clicking on the category title in the side panel. There is two special categories on top of that panel:
 
   * *Main feed* which displays only articles from feeds marked as available in that category
-  * *Favorites* which displays only articles marked as favorites
+  * *Favourites* which displays only articles marked as favourites
 
 ##By feed
 
@@ -116,9 +116,9 @@ There is several methods to filter articles by feed:
 
 ##By status
 
-Each article has two attributes which can be combined. The first attribute indicates if the article was read or not. The second attribute indicates if the article was marked as favorite or not.
+Each article has two attributes, which can be combined. The first attribute indicates if the article was read or not. The second attribute indicates if the article was marked as favorite or not.
 
-With version 0.7, attribute filters are available in the article display dropdown list. With this version, it is not possible to combine those filters. For instance, it is not possible to display only read and favorite articles.
+With version 0.7, attribute filters are available in the article display dropdown list. With this version, it is not possible to combine those filters. For instance, it is not possible to display only read and favourite articles.
 
 ![Attribute filters in 0.7](../img/users/status.filter.0.7.png)
 
@@ -132,21 +132,52 @@ By default, this filter displays only unread articles
 
 It is possible to filter articles by their content by inputting a string in the search field.
 
-##By keyword
+##With the search field
 
-Version 0.7.x introduced the support of keyword filters. They must be used in the search field used for the content filtering.
+It is possible to use the search field to further refine results:
 
-  * by author: `author:<name>`
-  * by title: `intitle:<title>`
-  * by URL: `inurl:<url>`
+	* by author: `author:name` or `author:'composed name'`
+	* by title: `intitle:keyword` or `intitle:'composed keyword'`
+	* by URL: `inurl:keyword` or `inurl:'composed keyword'`
+	* by tag: `#tag`
+	* by free-text: `keyword` or `'composed keyword'`
+	* by date of discovery, using the [ISO 8601 time interval format](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals): `date:<date-interval>`
+		* From a specific day, or month, or year:
+			* `date:2014-03-30`
+			* `date:2014-03` or `date:201403`
+			* `date:2014`
+		* From a specific time of a given day:
+			* `date:2014-05-30T13`
+			* `date:2014-05-30T13:30`
+		* Between two given dates:
+			* `date:2014-02/2014-04`
+			* `date:2014-02--2014-04`
+			* `date:2014-02/04`
+			* `date:2014-02-03/05`
+			* `date:2014-02-03T22:00/22:15`
+			* `date:2014-02-03T22:00/15`
+		* After a given date:
+			* `date:2014-03/`
+		* Before a given date:
+			* `date:/2014-03`
+		* For a specific duration after a given date:
+			* `date:2014-03/P1W`
+		* For a specific duration before a given date:
+			* `date:P1W/2014-05-25T23:59:59`
+		* For the past duration before now (the trailing slash is optional):
+			* `date:P1Y/` or `date:P1Y` (past year)
+			* `date:P2M/` (past two months)
+			* `date:P3W/` (past three weeks)
+			* `date:P4D/` (past four days)
+			* `date:PT5H/` (past five hours)
+			* `date:PT30M/` (past thirty minutes)
+			* `date:PT90S/` (past ninety seconds)
+			* `date:P1DT1H/` (past one day and one hour)
+	* by date of publication, using the same format: `pubdate:<date-interval>`
 
-Be aware that there is no space between the keyword and the value.
-Note also that keywords can not be combined.
+Beware that there is no space between the operator and the value.
 
-Version 0.8.x introduced a new keyword to search by dates. The format used is the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals) format: `date:<date>`
+Some operators can be used negatively, to exclude articles, with the same syntax as above, but prefixed by a `!` or `-`:
+`-author:name`, `-intitle:keyword`, `-inurl:keyword`, `-#tag`, `!keyword`.
 
-It is also possible to combine keywords to have a very sharp filter.
-
-# Searching articles
-
-**TODO**
+It is also possible to combine operators to have a very sharp filter, and it is allowed to have multiple instances of `author:`, `intitle:`, `inurl:`, `#`, and free-text.
