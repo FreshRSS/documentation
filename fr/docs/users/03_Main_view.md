@@ -136,44 +136,44 @@ Il est possible de filtrer les articles par leur contenu en entrant une chaine d
 
 Il est possible d’utiliser le champ de recherche pour raffiner les résultats :
 
-	* par auteur : `author:nom` or `author:'nom composé'`
-	* par titre : `intitle:mot` or `intitle:'mot composé'`
-	* par URL: `inurl:mot` or `inurl:'mot composé'`
-	* par tag: `#tag`
-	* par texte libre : `mot` or `'mot composé'`
-	* par date de découverte, en utilisant le [format d’intervalle de dates ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601#Les_dur.C3.A9es_et_intervalles) : `date:<intervalle>`
-		* D’un jour, mois, ou année :
-			* `date:2014-03-30`
-			* `date:2014-03` or `date:201403`
-			* `date:2014`
-		* D’une heure précise d’un jour donné :
-			* `date:2014-05-30T13`
-			* `date:2014-05-30T13:30`
-		* Entre deux dates :
-			* `date:2014-02/2014-04`
-			* `date:2014-02--2014-04`
-			* `date:2014-02/04`
-			* `date:2014-02-03/05`
-			* `date:2014-02-03T22:00/22:15`
-			* `date:2014-02-03T22:00/15`
-		* Après une date donnée :
-			* `date:2014-03/`
-		* Avant une date donnée :
-			* `date:/2014-03`
-		* Pour une certaine durée après une date donnée :
-			* `date:2014-03/P1W`
-		* Pour une certaine durée avant une date donnée :
-			* `date:P1W/2014-05-25T23:59:59`
-		* Pour une certaine durée avant l’instant présent (la barre oblique est optionnelle) :
-			* `date:P1Y/` ou `date:P1Y` (depuis un an)
-			* `date:P2M/` (depuis deux mois)
-			* `date:P3W/` (depuis trois semaines)
-			* `date:P4D/` (depuis quatre jours)
-			* `date:PT5H/` (depuis cinq heures)
-			* `date:PT30M/` (depuis trente minutes)
-			* `date:PT90S/` (depuis 90 seconds)
-			* `date:P1DT1H/` (depuis un jour et une heure)
-	* par date de publication, en utilisant le même format : `pubdate:<intervalle>`
+* par auteur : `author:nom` or `author:'nom composé'`
+* par titre : `intitle:mot` or `intitle:'mot composé'`
+* par URL: `inurl:mot` or `inurl:'mot composé'`
+* par tag: `#tag`
+* par texte libre : `mot` or `'mot composé'`
+* par date de découverte, en utilisant le [format d’intervalle de dates ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601#Les_dur.C3.A9es_et_intervalles) : `date:<intervalle>`
+	* D’un jour, mois, ou année :
+		* `date:2014-03-30`
+		* `date:2014-03` or `date:201403`
+		* `date:2014`
+	* D’une heure précise d’un jour donné :
+		* `date:2014-05-30T13`
+		* `date:2014-05-30T13:30`
+	* Entre deux dates :
+		* `date:2014-02/2014-04`
+		* `date:2014-02--2014-04`
+		* `date:2014-02/04`
+		* `date:2014-02-03/05`
+		* `date:2014-02-03T22:00/22:15`
+		* `date:2014-02-03T22:00/15`
+	* Après une date donnée :
+		* `date:2014-03/`
+	* Avant une date donnée :
+		* `date:/2014-03`
+	* Pour une certaine durée après une date donnée :
+		* `date:2014-03/P1W`
+	* Pour une certaine durée avant une date donnée :
+		* `date:P1W/2014-05-25T23:59:59`
+	* Pour une certaine durée avant l’instant présent (la barre oblique est optionnelle) :
+		* `date:P1Y/` ou `date:P1Y` (depuis un an)
+		* `date:P2M/` (depuis deux mois)
+		* `date:P3W/` (depuis trois semaines)
+		* `date:P4D/` (depuis quatre jours)
+		* `date:PT5H/` (depuis cinq heures)
+		* `date:PT30M/` (depuis trente minutes)
+		* `date:PT90S/` (depuis 90 seconds)
+		* `date:P1DT1H/` (depuis un jour et une heure)
+* par date de publication, en utilisant le même format : `pubdate:<intervalle>`
 
 Attention à ne pas introduire d’espace entre l’opérateur et la valeur recherchée.
 

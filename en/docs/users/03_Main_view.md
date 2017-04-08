@@ -136,44 +136,44 @@ It is possible to filter articles by their content by inputting a string in the 
 
 It is possible to use the search field to further refine results:
 
-	* by author: `author:name` or `author:'composed name'`
-	* by title: `intitle:keyword` or `intitle:'composed keyword'`
-	* by URL: `inurl:keyword` or `inurl:'composed keyword'`
-	* by tag: `#tag`
-	* by free-text: `keyword` or `'composed keyword'`
-	* by date of discovery, using the [ISO 8601 time interval format](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals): `date:<date-interval>`
-		* From a specific day, or month, or year:
-			* `date:2014-03-30`
-			* `date:2014-03` or `date:201403`
-			* `date:2014`
-		* From a specific time of a given day:
-			* `date:2014-05-30T13`
-			* `date:2014-05-30T13:30`
-		* Between two given dates:
-			* `date:2014-02/2014-04`
-			* `date:2014-02--2014-04`
-			* `date:2014-02/04`
-			* `date:2014-02-03/05`
-			* `date:2014-02-03T22:00/22:15`
-			* `date:2014-02-03T22:00/15`
-		* After a given date:
-			* `date:2014-03/`
-		* Before a given date:
-			* `date:/2014-03`
-		* For a specific duration after a given date:
-			* `date:2014-03/P1W`
-		* For a specific duration before a given date:
-			* `date:P1W/2014-05-25T23:59:59`
-		* For the past duration before now (the trailing slash is optional):
-			* `date:P1Y/` or `date:P1Y` (past year)
-			* `date:P2M/` (past two months)
-			* `date:P3W/` (past three weeks)
-			* `date:P4D/` (past four days)
-			* `date:PT5H/` (past five hours)
-			* `date:PT30M/` (past thirty minutes)
-			* `date:PT90S/` (past ninety seconds)
-			* `date:P1DT1H/` (past one day and one hour)
-	* by date of publication, using the same format: `pubdate:<date-interval>`
+* by author: `author:name` or `author:'composed name'`
+* by title: `intitle:keyword` or `intitle:'composed keyword'`
+* by URL: `inurl:keyword` or `inurl:'composed keyword'`
+* by tag: `#tag`
+* by free-text: `keyword` or `'composed keyword'`
+* by date of discovery, using the [ISO 8601 time interval format](http://en.wikipedia.org/wiki/ISO_8601#Time_intervals): `date:<date-interval>`
+	* From a specific day, or month, or year:
+		* `date:2014-03-30`
+		* `date:2014-03` or `date:201403`
+		* `date:2014`
+	* From a specific time of a given day:
+		* `date:2014-05-30T13`
+		* `date:2014-05-30T13:30`
+	* Between two given dates:
+		* `date:2014-02/2014-04`
+		* `date:2014-02--2014-04`
+		* `date:2014-02/04`
+		* `date:2014-02-03/05`
+		* `date:2014-02-03T22:00/22:15`
+		* `date:2014-02-03T22:00/15`
+	* After a given date:
+		* `date:2014-03/`
+	* Before a given date:
+		* `date:/2014-03`
+	* For a specific duration after a given date:
+		* `date:2014-03/P1W`
+	* For a specific duration before a given date:
+		* `date:P1W/2014-05-25T23:59:59`
+	* For the past duration before now (the trailing slash is optional):
+		* `date:P1Y/` or `date:P1Y` (past year)
+		* `date:P2M/` (past two months)
+		* `date:P3W/` (past three weeks)
+		* `date:P4D/` (past four days)
+		* `date:PT5H/` (past five hours)
+		* `date:PT30M/` (past thirty minutes)
+		* `date:PT90S/` (past ninety seconds)
+		* `date:P1DT1H/` (past one day and one hour)
+* by date of publication, using the same format: `pubdate:<date-interval>`
 
 Beware that there is no space between the operator and the value.
 
